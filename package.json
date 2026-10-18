@@ -1,6 +1,6 @@
 {
 	"name": "mybox",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"private": true,
 	"license": "MIT",
 	"contributors": [
@@ -14,6 +14,7 @@
 	"scripts": {
 		"dev": "MODE=dev tsdown",
 		"build": "tsdown",
+		"build:pages": "tsdown && node scripts/build-pages.ts",
 		"typecheck": "tsc --noEmit",
 		"fix": "oxlint --silent --fix && oxfmt",
 		"check": "oxlint && oxfmt --check",
@@ -22,6 +23,7 @@
 	"devDependencies": {
 		"@hesprs/sync-engine-sdk": "3.3.1",
 		"@obsidian-typings/obsidian-public-latest": "^6.41.0",
+		"@types/node": "^24.19.2",
 		"obsidian": "^1.14.4",
 		"oxfmt": "^0.72.0",
 		"oxlint": "^1.87.0",

@@ -141,6 +141,12 @@
 	},
 	"overrides": [
 		{
+			"files": ["scripts/**/*.ts"],
+			"rules": {
+				"import/no-nodejs-modules": "off"
+			}
+		},
+		{
 			"files": ["*.test.ts"],
 			"plugins": ["unicorn", "typescript", "oxc", "import", "vitest"],
 			"rules": {

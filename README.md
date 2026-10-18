@@ -4,7 +4,8 @@ A [Sync Engine](https://sync.consensia.cc) module that syncs your vault to a NAV
 
 ## Installation
 
-Run `pnpm build`, then load `dist/mybox.js` with **Install module from file** on the Sync Engine module management page.
+1. In Obsidian, open **Settings > Sync Engine > Development > Module sources** and add `https://chiwanpark.github.io/sync-engine-mybox/modules.json`.
+2. Install **NAVER MYBOX** from the Sync Engine module management page.
 
 ## Settings
 

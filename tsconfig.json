@@ -14,11 +14,18 @@
 		"verbatimModuleSyntax": true,
 		"allowImportingTsExtensions": true,
 		"lib": ["ESNext", "DOM", "DOM.Iterable"],
-		"types": ["@obsidian-typings/obsidian-public-latest"],
+		"types": ["@obsidian-typings/obsidian-public-latest", "node"],
 		"paths": {
 			"@/*": ["./src/*"],
 			"@": ["./src"]
 		}
 	},
-	"include": ["src/**/*.ts", "test/**/*.ts", "tsdown.config.ts", "vitest.config.ts"]
+	"include": [
+		"src/**/*.ts",
+		"test/**/*.ts",
+		"scripts/**/*.ts",
+		"module.ts",
+		"tsdown.config.ts",
+		"vitest.config.ts"
+	]
 }
