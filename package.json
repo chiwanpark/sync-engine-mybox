@@ -1,0 +1,34 @@
+{
+	"name": "mybox",
+	"version": "0.0.1",
+	"private": true,
+	"license": "MIT",
+	"contributors": [
+		{
+			"name": "Chiwan Park",
+			"email": "chiwanpark@hotmail.com",
+			"github": "chiwanpark"
+		}
+	],
+	"type": "module",
+	"scripts": {
+		"dev": "MODE=dev tsdown",
+		"build": "tsdown",
+		"typecheck": "tsc --noEmit",
+		"fix": "oxlint --silent --fix && oxfmt",
+		"check": "oxlint && oxfmt --check",
+		"tests": "vitest run"
+	},
+	"devDependencies": {
+		"@hesprs/sync-engine-sdk": "3.3.1",
+		"@obsidian-typings/obsidian-public-latest": "^6.41.0",
+		"obsidian": "^1.14.4",
+		"oxfmt": "^0.72.0",
+		"oxlint": "^1.87.0",
+		"oxlint-tsgolint": "^7.0.2004",
+		"tsdown": "^0.23.1",
+		"typescript": "^6.0.3",
+		"vitest": "^5.0.5"
+	},
+	"packageManager": "pnpm@12.14.0"
+}
